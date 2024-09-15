@@ -1,0 +1,66 @@
+/* @font-face {
+	font-family: "Roboto";
+	src: url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+    font-weight: 400;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.main-block__doby__task-card {
+    min-height: 60px;
+    width: calc(100% - 16px);
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-weight: 400;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    /* position: relative; */
+    box-shadow: 0 2px rgb(171, 181, 189);
+    /* block-size: border-box; */
+    cursor: grab;
+    /* box-sizing: border-box; */
+}
+
+.main-block__doby__task-card__remove {
+    /* content: "\E951"; */
+    /* background-image: url(../img/cross.svg); */
+    width: 28px;
+    height: 28px;
+    block-size: border-box;
+    border-radius: 5px;
+    background-color: rgb(222, 226, 229);
+    margin-left: calc(99%/3 - 90px);
+    margin-top: -15px;
+    /* margin-right: ; */
+    position: absolute;
+    opacity: 0.6;
+    cursor: default;
+    /* top: 8px; */
+    /* z-index: 2; */
+    /* padding: 4px; */
+    
+}
+
+.main-block__doby__task-card__remove::before {
+    content: '\E951';
+}
+
+.dragged {
+    min-height: 60px;
+    width: calc(100vw / 3 - 48px);
+    background-color: #fff;
+    border-radius: 5px;
+    font-family: "Roboto";
+    font-weight: 400;
+    padding: 10px 8px;
+    margin-bottom: 8px;
+    box-shadow: 0 10px 10px rgb(171, 181, 189);;
+    position: absolute;
+    z-index: 999;
+    cursor: grabbing;
+}
+
+.draggedM {
+    display: none;
+}
